@@ -1,0 +1,231 @@
+@charset "UTF-8";
+html {
+    box-sizing: border-box; 
+  } 
+  * {
+    box-sizing: initial; 
+  } 
+  body {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    color: #11052C;
+    background: fixed url(../images/background/pattern-3289978.png) center repeat;
+    font-weight: 200;
+    margin: 0em;
+    }
+/*grid*/
+#grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "banner"
+  "main"
+  "body"
+  "footer"; 
+}
+header{
+  grid-area: banner;
+}
+main {
+  grid-area: main;
+}
+#menu {
+  grid-area: body;
+}
+footer{
+  grid-area: footer;
+}
+/*nav&footer*/
+nav{
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background-color: #D63447; 
+  background-size: cover;
+  font-family: 'Rampart One', cursive;
+  text-align: center;
+  font-size: 16px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+nav ul li {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  color:#F6EEDF;
+}
+nav ul li a {
+  display: inline-block;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+  text-decoration: none;
+} 
+nav ul li a:link {
+  color: #FFF3E2;
+  text-decoration: none;
+}
+nav ul li a:visited {
+  color: #FFE5CA;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #FA9884;
+  text-decoration: none;
+}
+nav ul li a:active {
+  color: #E74646;
+  text-decoration: none;
+}
+ 
+footer {
+  font-size: small;
+  padding: .5em;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-color: #D63447; 
+  background-size: cover;
+  color: #F6EEDF;
+}
+footer img {
+  border-radius: 30%;
+} 
+footer p{
+  color: #F6EEDF;
+}
+/*header*/
+header {
+  background: #F57B51 center repeat;
+  background-size: cover; 
+  text-align: center;
+  height: auto;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  justify-content: center;
+  margin:0em;
+}
+
+header h1 {
+  font-size: 3em;
+  color: #F6EEDF;
+  font-family: 'Rampart One', cursive;
+  text-align: center;
+  justify-content: center;
+}
+/*headlines*/
+h2 {
+  color: #11052C;
+  font-size: xx-large;
+  font-family: 'Rampart One', cursive;
+}
+p {
+  font-size: 1em;
+  color: #11052C;
+  font-size: medium;
+  font-family: 'Poppins', sans-serif;
+}
+/*article*/
+main{
+  border-radius: 1em 0em;
+  border-color: #FFD31D;
+  border-width: 1em;
+  border-style: double;
+  padding: 1em;
+  margin: 1em;
+  background-color: #F6EEDF;
+}
+/*menu*/
+#menu {
+    border: 1em double #FFD31D;
+    border-radius: 1em 0em;
+    border-width: 1em;
+    background-color: #F6EEDF;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: 1em;
+    font-family: 'Poppins', sans-serif;
+    
+  }
+  section {
+    background: #F6EEDF;
+    margin: 10px;
+    padding: 20px;
+    border: double 4px #D63447;
+    border-radius: 1em 2em 3em;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    flex: auto; 
+  
+  }
+  .title {
+    background-color: #FA9884;
+    color: #11052C;
+    line-height: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    list-style-type: none;
+  }
+  .price {
+    font-weight: bold;
+    background: #D63447;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 1em;
+    font-family: 'Poppins', sans-serif;
+  }
+  .photo {
+    order: -1; 
+  }
+
+img[alt*="menupic"]{
+    border-radius: 1em;
+}
+section a:link {
+    color: #E74646;
+    text-decoration: none;
+  }
+  section a:visited {
+    color: #11052C;
+    text-decoration: none;
+  }
+  section a:hover {
+    color: #FFE5CA;
+    text-decoration: none;
+  }
+  section a:active {
+    color: #FA9884;
+    text-decoration: none;
+  }
+img[alt*="BacktoNav"]{
+    border-radius: .5em;
+    float: left;
+    background-color: #F57B51;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+  }
+  ul li {
+    list-style-type: none;
+    font-size: medium;
+    font-weight: normal;
+}
+ul li a{
+  display: flex;
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em;
+  margin: .1em;
+}

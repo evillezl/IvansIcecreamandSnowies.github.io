@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivan's Ice-cream and Snowies</title>
+    <style>
+        @import url(../CSS/form.css);
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rampart+One&display=swap');
+    </style>
+</head>
+<body>
+<header>
+    <h1>Ivan's Ice-Cream & Snowies </h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="parties.html">Parties</a></li>
+            <li><a href="orderonline.html">Order Online</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2>Contact form for parties!</h2>
+</main>
+
+<article>
+<form action="" method="POST"> 
+    <h3>Your Information:</h3>
+    <ul>
+      <li>Name: <input type="text" name="customername"> </li>
+      <li>Telephone Number: <input type="text" name="customerstelephonenumber"></li>
+      <li>Email:<input type="text" name="customersemail"></li>
+    </ul>
+    
+    <h3>Questionaire:</h3>
+    <ul>
+      <li>What type of event?<br><textarea name="instructions" rows="4" cols="60" maxlength="200" placeholder="No more than 200 characters long"></textarea></li>
+      <li>What kind of food do you expect or want?<br><textarea name="instructions" rows="4" cols="60" maxlength="200" placeholder="No more than 200 characters long"></textarea></li>
+      <li>How many guests will be invited?<br><textarea name="instructions" rows="4" cols="60" maxlength="200" placeholder="No more than 200 characters long"></textarea></li>
+    </ul>
+
+    <ul>
+    <li>How much hours do you want to book us for? (max of 5)
+          <select name="number" size="1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+           </select></li>
+    </ul>
+
+    <ul>
+        <li>Estimated Budget?
+              <select name="number" size="1">
+                <option>$1-$300</option>
+                <option>$300-$600</option>
+                <option>$600-$900</option>
+                <option>$900-$1,200</option>
+               </select></li>
+        </ul>
+    
+    <h3>What time of day do you want us at your event?:</h3>
+    <ul>
+      <li><input type="radio" name="Typesofday" value="Morning">Morning</li>
+      <li><input type="radio" name="Typesofday" value="Afternoon">Afternoon</li>
+      <li><input type="radio" name="Typesofday" value="Evening">Evening</li>
+      <li><input type="radio" name="Typesofday" value="Night">Night</li>
+     </ul>
+    
+    <div id="submit">
+      <p><input type="submit" value="Submit"><input type="reset"></p>
+    </div>
+  </form>
+    <p>You will recieve a call from us!</p>
+  </article>
+
+<a href="#nav"><img src="../images/icons/arrow_upward_FILL0_wght400_GRAD0_opsz48.svg" alt="BacktoNav"></a>
+
+<footer>
+    <p>Contact Me</p>
+        <p>
+            <a href="https://www.facebook.com/Ivans.Icecream1"><img src="../images/icons/facebook.svg" alt="facebook" width="40" height="40"></a>
+            <a href="https://www.instagram.com"><img src="../images/icons/instagram.svg" alt="instagram" width="40" height="40"></a>
+        </p>
+            <small>© All content copyright 2023, Elsy Villezcas</small>
+</footer>
+</body>
+</html>
